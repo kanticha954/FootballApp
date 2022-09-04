@@ -19,13 +19,13 @@ public class Football {
      */
     
    private List<Observer> observers = new ArrayList<Observer>();
-   private int state;
+   private String state;
 
-   public int getState() {
+   public String getState() {
       return state;
    }
 
-   public void setState(int state) {
+   public void setState(String state) {
       this.state = state;
       notifyAllObservers();
    }
@@ -40,4 +40,6 @@ public class Football {
       }
      
     }
+
+    
 }

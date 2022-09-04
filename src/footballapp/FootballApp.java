@@ -11,12 +11,15 @@ package footballapp;
  */
 public class FootballApp {
     public static void main(String[] args) {
-      Football football = new Football();
-      new FootballObserver(football);
+      Football goal = new Football();
+      new FootballObserver(goal);
+     
+      System.out.println("Enter Score Thai 1-0 UDE");
+      goal.setState("Thai 1-0 UDE");
+      
+      System.out.println("Enter Score Thai 2-0 UDE");
+      goal.setState("Thai 2-0 UDE");
 
-      goal = football.setState(1-0);
-      System.out.println("Enter Score Thai"+goal+"UAE");	
-      System.out.println("Second state change: 10");	
-      football.setState(10);
+      
    }
 }

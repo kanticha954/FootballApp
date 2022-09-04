@@ -17,7 +17,9 @@ public class FootballObserver extends Observer{
    }
     
    @Override
-   public void update() {
-      System.out.println( "Binary String: " + Integer.toBinaryString( goal.getState() ) ); 
-   }
+   public void update() { 
+    for(int i = 0; i <= 1; i++){
+      System.out.println( "live result: " + goal.getState()); 
+        }
+    }
 }
